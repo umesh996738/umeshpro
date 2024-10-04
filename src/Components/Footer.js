@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <footer className="w-100 bg-light text-center">
                 
-                    <p> Sakinaka, Mumbai, Maharashtra • 9967385243 • umeshpal5243@gmail.com
+                    <p>  • umeshpal5243@gmail.com , Mumbai, Maharashtra ,
                             www.linkedin.com/in/umesh-d-pal-1914b4262 
 </p>        
                  <p>© {year} Umesh Pal. All Rights Reserved | Term and conditions  </p>
