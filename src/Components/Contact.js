@@ -4,10 +4,10 @@ import { useState } from 'react';     // useState is a hook
 
 const Contact = () => {
     const [data, setData] = useState({
-        fullName: '',
-        phone: '',
-        email: '',
-        message: '',
+        FullName: '',
+        Phone: '',
+        Email: '',
+        Message: '',
 
     });
     const inputEvent = (event) => {

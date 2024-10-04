@@ -6,12 +6,12 @@
   font-family: Mulish, sans-serif;
 }
 .navbar{
-  background-color: #fff !important;
+  background-color: #060000 !important;
 }
 .navbar-brand{
   font-size: 1.5rem !important;
   font-weight: 700 !important;
-  color: rgb(52, 78, 120);
+  color: rgb(4, 4, 4);
 }
 .navbar-nav{
   display: flex;
@@ -22,7 +22,7 @@
 .navbar a{
   font-size: 1.2rem;
   font-weight: 700;
-  color: rgb(55, 13, 245);
+  color: rgb(10, 9, 10);
   text-decoration: none;
   text-transform: capitalize;
 
@@ -31,11 +31,11 @@
 .selected{
   font-weight: bold;
   
-   border-bottom: 1px solid #1b08f3;
+   border-bottom: 1px solid #0b0b0b;
 }
 
 .navbar a:hover{
-  color: #565387;
+  color: #101011;
 }
 @media (max-width: 992px){
   .navbar-brand{
@@ -89,7 +89,7 @@
 }
 #header .btn-get-started:hover{
   background-color: #3498db;
-  color: #fff;
+  color: #0f0e0e;
   
 }
 .header-img{

@@ -7,11 +7,13 @@ const About = () => {
 
     return(
         <>
-            <Common  name = 'Welcome to About Page' 
+            <Common  name = 'About Me '
+             
             imgsrc = {web}
             visit = '/contact'
             btnname = 'Contact Now'
-            />                  
+            />   
+                     
             
              
         </>

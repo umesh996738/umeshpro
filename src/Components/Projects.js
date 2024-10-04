@@ -1,17 +1,17 @@
 import React from 'react';
 import Card from './Card';
-import Sdata from './Sdata';
+import Pdata from './Pdata';
 
 
 
 
 
-const Sarvice = () => {
+const Projects = () => {
 
     return(
         <>
             <div className ='my-5'>
-                <h1 className='text-center'> Certificates</h1>
+                <h1 className='text-center'> Projects</h1>
             </div>
             <div className ='container-fluid mb-5' >
                 <div className ='row'>
@@ -19,7 +19,7 @@ const Sarvice = () => {
                         <div className ='row gy-4'>
                             
                             {
-                                Sdata.map((item,index) =>{
+                                Pdata.map((item,index) =>{
                                     return <Card key ={item.id} imgSrc ={item.imgSrc} title ={item.title}/>
                                 })
                             }
@@ -37,4 +37,4 @@ const Sarvice = () => {
         </>    
     );
 };
-export default Sarvice;
+export default Projects;
