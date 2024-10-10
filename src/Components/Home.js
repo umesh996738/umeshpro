@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <Common  name = 'Hi, Myself ' 
             imgsrc = {web}
-            visit = 'https://github.com/umesh996738/Umesh_Resume.github.io/blob/main/Resume.pdf'
+            visit = '/Service'
             btnname = 'CV'
             
 
@@ -17,6 +17,7 @@ const Home = () => {
             
             
         </>
+        
     );
 };
 export default Home;
