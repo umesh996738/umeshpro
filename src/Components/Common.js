@@ -26,7 +26,9 @@ const Common = (props) => {
                                 <NavLink to = {props.visit} className='btn-get-started'>
                                     {props.btnname}
                                  </NavLink>
-                            </div>        
+                                  
+                            </div>  
+                                  
                         </div>
                         
                         <div className="col-lg-6 order-1 order-lg-2 header-img">
