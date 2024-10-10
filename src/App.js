@@ -9,6 +9,8 @@ import Service from './Components/Service';
 import Projects from './Components/Projects';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import Url from './Components/Url';
+
 
 
 
@@ -23,10 +25,12 @@ const App = () => {
         <Route exact path = "/Projects" element={<Projects/>}/>
         <Route exact path="/About" element={<About/>} />
         <Route exact path="/contact" element={<Contact/>} />
-         </Routes>
+        <Route exact path="/url" element = {<Url/>}/>
+        </Routes>
         <Footer />
+
       
-        </>
+     </>
     );
 };
 export default App;
