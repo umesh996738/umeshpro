@@ -18,7 +18,7 @@ const Url = () => {
             width: '7hv',
             marginTop: '10px', 
             marginRight: '600px', 
-            marginBottom: '1080px', 
+            marginBottom: '947px', 
             marginLeft: '140px'}} >
             CV
         </button>

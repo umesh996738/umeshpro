@@ -8,11 +8,13 @@ const About = () => {
     return(
         <>
             <Common  name = 'About Me '
+            
              
             imgsrc = {web}
             visit = '/contact'
             btnname = 'Contact Now'
-            />   
+            />  
+            
                      
             
              
