@@ -22,10 +22,11 @@ const Common = (props) => {
                             <h2>
                                  i'm a Software Engineer Makes Society Better.
                             </h2>
-                            <p> Results-driven Java Developer with 1.6 years of experience in designing, developing, and
-                             maintaining applications. Proficient in Java and related technologies, with a strong 
-                             foundation in software development principles and practices. Adept at collaborating in team 
-                             environments to deliver high-quality software solutions.
+                            <p> 
+                                Results-driven Java Developer with 1.6 years of experience in designing, developing,
+                                and maintaining applications. Proficient in Java and related technologies, with a strong 
+                                foundation in software development principles and practices. Adept at collaborating in team 
+                                environments to deliver high-quality software solutions.
                             </p>
                             <div className="mt-3">
                                 <NavLink to = {props.visit} className='btn-get-started'>
