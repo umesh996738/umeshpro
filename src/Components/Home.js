@@ -1,5 +1,5 @@
 import React from 'react';
-import web from '../images/umesh.jpg';
+import web from '../images/umesh.png';
 import Common from './Common';
 import Url from './Url';
 

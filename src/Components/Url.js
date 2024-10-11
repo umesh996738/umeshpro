@@ -11,9 +11,9 @@ const Url = () => {
     return (
         <section id = "header">
              <button onClick={handleClick} className='btn-get-started' style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center', 
+            display: '', 
+            alignItems: '', 
+            justifyContent: '', 
             height: '7vh',
             marginTop: '10px', 
             marginRight: '600px', 
