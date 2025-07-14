@@ -17,7 +17,7 @@ body {
 
 /* Professional Navigation */
 .navbar {
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
@@ -48,7 +48,7 @@ body {
 .navbar a {
   font-size: 1rem;
   font-weight: 500;
-  color: #2c3e50;
+  color: white;
   text-decoration: none;
   text-transform: capitalize;
   position: relative;
@@ -64,7 +64,7 @@ body {
 
 .navbar a.selected {
   color: #3498db;
-  background: rgba(52, 152, 219, 0.15);
+  background: rgba(52, 152, 219, 0.2);
   font-weight: 600;
 }
 
