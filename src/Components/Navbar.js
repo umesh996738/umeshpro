@@ -1,69 +1,94 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 50;
+            setScrolled(isScrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-             <>
-                <div className="container-fluid nav_bg">
-                    <div className="row">
-                        <div className="col-10 mx-auto">
-
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                <div className="container-fluid">
-                                 <NavLink className="navbar-brand" to ="/">Engineer...</NavLink>
-                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                                </button>
-                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-                                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
-                                <NavLink activeClassName ="selected" className="nav-link active" aria-current="page" to="/">Home</NavLink>
-                                </li>
-                                 <li className="nav-item">
-                            <NavLink activeClassName ="selected" className="nav-link" to="/Projects">Projects</NavLink>
-                                </li>
-                                
-                                 <li className="nav-item">
-                            <NavLink activeClassName ="selected" className="nav-link" to="/service">Certificates</NavLink>
-                            
-                                </li>
-                               
-                                <li className="nav-item">
-                            <NavLink activeClassName ="selected" className="nav-link" to="/about">About</NavLink>
-                                </li>
-                                <li className="nav-item">
-                            <NavLink activeClassName ="selected" className="nav-link" to="/Contact">Contact</NavLink>
-                                </li>
-                                 <li className="nav-item">
-                            <NavLink activeClassName ="selected" className="nav-link" to="/Url">CV</NavLink>
-                                </li>
-                               
-                                
-
-                                </ul>
-                                
-                                    
-        
-                                 
-     
-                                </div>
-                                 </div>
-                                </nav>
-                        </div>
+        <>
+            <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
+                <div className="container">
+                    <NavLink className="navbar-brand" to="/">
+                        Umesh Pal
+                    </NavLink>
+                    
+                    <button 
+                        className="navbar-toggler" 
+                        type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/"
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/Projects"
+                                >
+                                    Projects
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/service"
+                                >
+                                    Certificates
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/about"
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/contact"
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink 
+                                    className={({ isActive }) => `nav-link ${isActive ? 'selected' : ''}`}
+                                    to="/url"
+                                >
+                                    CV
+                                </NavLink>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
-
-            </>
-                
-        
-        
-  
-            
-        
+            </nav>
+        </>
     );
 };
 
